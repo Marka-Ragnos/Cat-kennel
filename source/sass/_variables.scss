@@ -1,0 +1,35 @@
+// // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+// $grid-gutter-width: 30px;
+// $grid-columns: 12;
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 760px, lg: 1300px, xl: 1300px);
+// $container-max-widths: (sm: 540px, md: 768px, lg: 1300px, xl: 1300px);
+
+// $gutter: $grid-gutter-width;
+
+//Template Colors
+//Можно добавлять цвета из темы
+$main-color-text: #2f3640;
+$main-color-background: #ffffff;
+
+//Template containers
+$mobile-width-container: 540px;
+$tablet-width-container: 790px;
+$laptop-width-container: 1100px;
+$desktop-width-container: 1220px;
+
+//Template breakpoints
+$mobile-width: 540px;
+$tablet-width: 760px;
+$laptop-width: 1100px;
+$desktop-width: 1440px;
+
+//Template retina media
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+//Template Fonts for BODY
+$main-fonts: "Roboto", "Arial", sans-serif;
+$sec-fonts: "Roboto", "Arial", sans-serif;
+$main-font-size: 16px;
+$main-font-weight: 400;
+$main-line-height: 24px;
