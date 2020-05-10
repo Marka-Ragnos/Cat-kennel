@@ -8,8 +8,8 @@
 
 //Template Colors
 //Можно добавлять цвета из темы
-$main-color-text: #2f3640;
-$main-color-background: #ffffff;
+$main-color-text: #ffffff;
+$main-color-background: #151313;
 
 //Template containers
 $mobile-width-container: 540px;
@@ -18,10 +18,10 @@ $laptop-width-container: 1100px;
 $desktop-width-container: 1220px;
 
 //Template breakpoints
-$mobile-width: 540px;
-$tablet-width: 760px;
+$mobile-width: 320px;
+$tablet-width: 768px;
 $laptop-width: 1100px;
-$desktop-width: 1440px;
+$desktop-width: 1366px;
 
 //Template retina media
 $retina-dpi: 144dpi;
@@ -30,6 +30,6 @@ $retina-dppx: 1.5dppx;
 //Template Fonts for BODY
 $main-fonts: "Roboto", "Arial", sans-serif;
 $sec-fonts: "Roboto", "Arial", sans-serif;
-$main-font-size: 16px;
-$main-font-weight: 400;
-$main-line-height: 24px;
+$main-font-size: 14px;
+$main-font-weight: 300;
+$main-line-height: 140%;

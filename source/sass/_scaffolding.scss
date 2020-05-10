@@ -9,7 +9,7 @@ body {
   line-height: $main-line-height;
   color: $main-color-text;
 
-  background-color: #ffffff;
+  background-color: $main-color-background;
 
   overflow-x: hidden;
 }
@@ -58,17 +58,21 @@ input[type="radio"].visually-hidden {
   padding: 0 20px;
 }
 
-@media (max-width: $desktop-width) {
-  .container {
-    max-width: $laptop-width-container;
-  }
+.show {
+  display: block;
 }
 
-@media (max-width: $laptop-width) {
+@media (max-width: $desktop-width) {
   .container {
     max-width: $tablet-width-container;
   }
 }
+
+// @media (max-width: $laptop-width) {
+//   .container {
+//     max-width: $tablet-width-container;
+//   }
+// }
 
 @media (max-width: $tablet-width) {
   .container {
