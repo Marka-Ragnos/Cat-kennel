@@ -1,14 +1,20 @@
 .section {
-	&
+  &__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: center;
+	}
+	&__lead {
+		margin: 0;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 26px;
+		text-align: center;
+		color: #a07b50;
+	}
 }
-
-.section__title {
-	margin: 0;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 36px;
-	line-height: 42px;
-	color: #ffffff;
-	text-align: center;
- }
- 
