@@ -1,0 +1,19 @@
+.team {
+	background-color: $main-color-background;
+	&__wrapper-outer {
+		display: flex;
+		padding: 2px 90px 2px 90px;
+	}
+	&__wrapper {
+		display: block;
+		padding-top: 83px;
+		padding-bottom: 70px;
+	}
+	&__slider {
+		align-self: stretch;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

@@ -6,6 +6,9 @@
 
 // $gutter: $grid-gutter-width;
 
+// for Adaptive font
+$maxWidth: 1366;
+
 //Template Colors
 //Можно добавлять цвета из темы
 $main-color-text: #ffffff;
@@ -14,13 +17,13 @@ $main-color-background: #151313;
 //Template containers
 $mobile-width-container: 540px;
 $tablet-width-container: 790px;
-$laptop-width-container: 1100px;
-$desktop-width-container: 1220px;
+// $laptop-width-container: 1100px;
+$desktop-width-container: 1286px;
 
 //Template breakpoints
 $mobile-width: 320px;
 $tablet-width: 768px;
-$laptop-width: 1100px;
+// $laptop-width: 1100px;
 $desktop-width: 1366px;
 
 //Template retina media
@@ -29,7 +32,7 @@ $retina-dppx: 1.5dppx;
 
 //Template Fonts for BODY
 $main-fonts: "Roboto", "Arial", sans-serif;
-$sec-fonts: "Roboto", "Arial", sans-serif;
+// $sec-fonts: "Roboto", "Arial", sans-serif;
 $main-font-size: 14px;
 $main-font-weight: 300;
 $main-line-height: 140%;

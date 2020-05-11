@@ -1,0 +1,26 @@
+.gallery {
+  display: block;
+  width: 100%;
+  max-width: 1068px;
+  height: auto;
+  margin: 0 auto 56px;
+  column-count: 2;
+  column-gap: 30px;
+	padding-left: 30px;
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	&__layout-column {
+		margin-right: 35px;
+	}
+	&__item {
+		flex-shrink: 1;
+		line-height: 0;
+		break-inside: avoid;
+		page-break-inside: avoid;
+		overflow: hidden;
+		width: 100%;
+	}
+}

@@ -1,0 +1,21 @@
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  svg {
+    transition: fill 0.3s ease-out, opacity 0.3s ease-out;
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

@@ -5,3 +5,17 @@
 // @media (max-width: $tablet-width) {
 
 // }
+.footer {
+	background-color: $main-color-background;
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		width: 72.7%;
+		padding-top: 70px;
+		padding-bottom: 59px;
+	}
+}

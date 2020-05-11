@@ -1,4 +1,13 @@
 .pets {
-	background-color: #1f1c1d;
- }
- 
+  background-color: #1f1c1d;
+  &__tab-content-wrapper {
+    width: 100%;
+  }
+  &__wrapper {
+    padding-top: 223px;
+    padding-bottom: 21px;
+  }
+  &__tab-content--show {
+    display: block;
+  }
+}

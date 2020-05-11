@@ -1,4 +1,9 @@
 .reviews {
 	background-color: #1f1c1d;
+	&__wrapper {
+		display: block;
+		padding-top: 27px;
+		padding-bottom: 112px;
+	}
  }
  
