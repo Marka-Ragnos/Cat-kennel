@@ -51,7 +51,7 @@
 		width: auto;
 	}
 	&__city {
-		font-family: "Roboto", "Arial", sans-serif;
+		font-family: $main-fonts;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 16px;
@@ -76,7 +76,7 @@
 	}
 	&__lead {
 		margin: 0;
-		font-family: "Roboto", "Arial", sans-serif;
+		font-family: $main-fonts;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 16px;
@@ -89,7 +89,7 @@
 	&__btn {
 		text-align: center;
 		width: 200px;
-		font-family: "Roboto", "Arial", sans-serif;
+		font-family: $main-fonts;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 14px;

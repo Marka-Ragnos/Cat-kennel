@@ -1,9 +1,120 @@
 .reviews {
-	background-color: #1f1c1d;
-	&__wrapper {
-		display: block;
-		padding-top: 27px;
-		padding-bottom: 112px;
-	}
- }
- 
+  background-color: #1f1c1d;
+  &__wrapper {
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 112px;
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 65px;
+    padding-left: 65px;
+    button {
+      display: block;
+    }
+  }
+  &__title {
+    margin-bottom: 59px;
+  }
+  &__list {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  &__item {
+    display: flex;
+    padding-left: 0;
+    img {
+      width: 481px;
+      height: auto;
+    }
+    blockquote {
+      margin: 0;
+    }
+    time {
+			font-family: $main-fonts;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 19px;
+      color: #a07b50;
+      margin-right: 35px;
+      letter-spacing: 0.6px;
+      line-height: 2.5;
+    }
+  }
+  &__item-title {
+    display: block;
+    margin: 0 0 13px;
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+  &__img-wrapper {
+    width: 60%;
+    margin-top: 45px;
+    z-index: 5;
+    margin-left: 54px;
+  }
+  &__content {
+    width: 72%;
+    margin-left: -106px;
+    padding: 109px 95px 78px 145px;
+    background-color: $main-color-background;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    blockquote {
+      display: block;
+      width: 100%;
+    }
+    blockquote p {
+      margin: 0 0 39px;
+      font-family: $main-fonts;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 23px;
+      color: #ffffff;
+      opacity: 0.7;
+    }
+  }
+  &__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  &__social {
+    align-items: flex-start;
+    li {
+      margin-right: 17px;
+      margin-bottom: 17px;
+      &:last-of-type {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+    a {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #a07b50;
+      transition: border-color 0.3s ease-out;
+      &:hover,
+      &:focus {
+        border-color: #ffffff;
+        svg {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+  &__icon {
+    fill: #a07b50;
+  }
+}

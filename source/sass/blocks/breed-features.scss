@@ -1,9 +1,115 @@
 .breed-features {
-	background-color: #1f1c1d;
-	&__wrapper {
-		position: relative;
-		padding-top: 21px;
-		padding-bottom: 129px;
-	}
- }
- 
+  background-color: #1f1c1d;
+  &__wrapper {
+    position: relative;
+    padding-top: 21px;
+    padding-bottom: 129px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    transform: translateX(10px);
+  }
+  &__image {
+    width: 602px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    transform: translateX(33px);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 105px;
+      left: 24px;
+      z-index: -1;
+      width: 519px;
+      height: 519px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 49px;
+      left: -30px;
+      z-index: -1;
+      border-radius: 50%;
+      width: 631px;
+      height: 631px;
+      border: 1px solid #a07b50;
+    }
+  }
+  &__lead {
+    margin-bottom: 23px;
+    width: 62%;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 16px;
+    font-family: $main-fonts;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  &__item {
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ffffff;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #a07b50;
+    }
+    &--cohabitation {
+      font-size: 14px;
+      line-height: 21px;
+      top: 343px;
+      left: -409px;
+      max-width: 255px;
+      text-align: right;
+      &::before {
+        right: -39px;
+      }
+    }
+    &--instruction {
+      top: 411px;
+      right: -482px;
+      max-width: 201px;
+      &::before {
+        top: 3px;
+        left: -36px;
+      }
+    }
+    &--weight {
+      top: 584px;
+      right: -444px;
+      max-width: 160px;
+      &::before {
+        top: 6px;
+        left: -36px;
+      }
+    }
+    &--appearance {
+      max-width: 200px;
+      top: 495px;
+      left: -370px;
+      text-align: right;
+      &::before {
+        right: -31px;
+      }
+    }
+  }
+}

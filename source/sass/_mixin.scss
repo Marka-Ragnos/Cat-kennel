@@ -1,14 +1,13 @@
-@mixin reset-list {
-  list-style: none;
+// @mixin reset-list {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
 
-  margin: 0;
-  padding: 0;
-}
-
-@mixin reset {
-  margin: 0;
-  padding: 0;
-}
+// @mixin reset {
+//   margin: 0;
+//   padding: 0;
+// }
 
 //Adaptive font
 @mixin adaptiv-font($pcSize, $mobSize) {

@@ -1,7 +1,98 @@
 .care {
-	background-color: $main-color-background;
-	&__wrapper {
-		padding-top: 84px;
-		padding-bottom: 51px;
+  background-color: $main-color-background;
+  background-image: url("../img/bg-care-desktop@1x.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  &__wrapper {
+    padding-top: 84px;
+    padding-bottom: 51px;
+  }
+  &__title {
+    margin-bottom: 48px;
+  }
+  &__list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+  }
+  &__item {
+    display: flex;
+    flex-basis: 48.3%;
+    margin-bottom: 3.9%;
+    // margin-right: auto;
+    &:nth-child(2n + 1) {
+    	margin-right: auto;
+    }
+    &--wool {
+      order: 0;
+    }
+    &--earsandeyes {
+      order: 2;
+      margin-right: auto;
+    }
+    &--claws {
+      order: 1;
+      margin-right: 0 !important;
+    }
+    &--food {
+      order: 3;
+      margin-right: 0;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    min-height: 165px;
+    border: 1px solid #a07b50;
+    padding-top: 37px;
+    padding-left: 58px;
+    padding-bottom: 21px;
+    padding-right: 19%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 10.6%;
+      height: 100%;
+      background-color: #a07b50;
+      border-left: 1px solid #a07b50;
+      background-image: url("../img/arrowDetails.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: background-color 0.3s ease-out;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      &::after {
+        background-color: $main-color-background;
+      }
+    }
+	}
+	&__link-title {
+		margin: 0;
+		margin-bottom: 10px;
+		font-family: $main-fonts;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 26px;
+		color: #a07b50;
+	}
+	&__link-content {
+		margin: 0;
+		font-family: $main-fonts;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 23px;
+		color: #ffffff;
 	}
 }

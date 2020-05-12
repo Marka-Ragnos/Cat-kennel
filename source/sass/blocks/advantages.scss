@@ -1,7 +1,76 @@
 .advantages {
-	background-color: $main-color-background;
-	&__wrapper {
-		padding-top: 83px;
-		padding-bottom: 64px;
-	}
+  background-color: $main-color-background;
+  &__wrapper {
+    padding-top: 83px;
+    padding-bottom: 64px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__lead {
+    margin-bottom: 46px;
+    word-spacing: 2px;
+  }
+  &__list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 95%;
+  }
+  &__item {
+    background-color: #1f1c1d;
+    width: 31.4%;
+    min-height: 301px;
+    margin-right: 2.9%;
+    margin-bottom: 2.9%;
+    padding-top: 19.8px;
+    padding-bottom: 19.8px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: block;
+    max-width: 320px;
+    min-height: 263px;
+    margin: auto;
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 47px;
+    padding-bottom: 16px;
+    transition: background-color 0.3s ease-out, fill 0.3s ease-out,
+      stroke 0.3s ease-out;
+    &:hover {
+      background-color: #a07b50;
+      svg {
+        fill: #ffffff;
+        stroke: #a07b50;
+      }
+    }
+    svg {
+      margin: 0 auto;
+      fill: #a07b50;
+      stroke-width: 2;
+      stroke: #1f1c1d;
+      margin-bottom: 23px;
+			transition: fill 0.3s ease-out, stroke 0.3s ease-out;
+			&.icon-counseling24 {
+				margin-bottom: 33px;
+			}
+		}
+		span {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			max-width: 233px;
+		}
+  }
 }
