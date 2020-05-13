@@ -46,105 +46,218 @@
         fill: #ffffff;
       }
     }
-	}
-	&__content {
-		width: auto;
-	}
-	&__city {
-		font-family: $main-fonts;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 24px;
-		text-align: left;
-		color: #a07b50;
-		max-width: 330px;
-		margin-top: 30px;
-		margin-bottom: 17px;
-	}
-	&__title {
-		margin: 0;
-		margin-bottom: 16px;
-		font-family: "Yeseva One", "Georgia", serif;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 52px;
-		line-height: 60px;
-		color: #ffffff;
-		max-width: 350px;
-		transform: translateX(-3px);
-	}
-	&__lead {
-		margin: 0;
-		font-family: $main-fonts;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 24px;
-		text-align: left;
-		color: #a07b50;
-		max-width: 330px;
-		margin-bottom: 48px;
-	}
-	&__btn {
-		text-align: center;
-		width: 200px;
-		font-family: $main-fonts;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 14px;
-		line-height: 14px;
-		color: #ffffff;
-		display: block;
-		overflow: hidden;
-		cursor: pointer;
-		border: 1px solid #a07b50;
-		background-color: transparent;
-		text-decoration: none;
-		padding: 18px;
-		transition: color 0.3s ease-out, border 0.3s ease-out;
-		margin-bottom: 110px;
-		&:hover,
-		&:focus {
-			color: #a07b50;
-			border: 1px solid #ffffff;		
+  }
+  &__content {
+    width: auto;
+  }
+  &__city {
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #a07b50;
+    max-width: 330px;
+    margin-top: 30px;
+    margin-bottom: 17px;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: "Yeseva One", "Georgia", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 60px;
+    color: $main-color-text;
+    max-width: 350px;
+    transform: translateX(-3px);
+  }
+  &__lead {
+    margin: 0;
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #a07b50;
+    max-width: 330px;
+    margin-bottom: 48px;
+  }
+  &__btn {
+    text-align: center;
+    width: 200px;
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    color: $main-color-text;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #a07b50;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 18px;
+    transition: color 0.3s ease-out, border 0.3s ease-out;
+    margin-bottom: 110px;
+    &:hover,
+    &:focus {
+      color: #a07b50;
+      border: 1px solid #ffffff;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__social {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 113px;
+    margin-top: auto;
+    li {
+      margin-bottom: 14px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    a {
+      width: 12px;
+      height: 11px;
+    }
+    svg {
+      fill: #ffffff;
+      &:hover,
+      &:focus {
+        fill: #a07b50;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 127px;
+      left: 6px;
+      height: 77px;
+      width: 2px;
+      background-color: rgba(255, 255, 255, 0.61);
+      margin-bottom: 29px;
+      align-self: center;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    background-image: url("../img/main-cat-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    background-position: right 0 bottom 0;
+    &__container {
+      padding: 0 15px;
+      background-image: none;
+    }
+    &__wrapper {
+      padding-top: 23px;
+      padding-bottom: 276px;
+    }
+    &__logo {
+      margin-bottom: 18px;
+    }
+    &__content {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__city {
+      font-size: 14px;
+      line-height: 150%;
+      margin-bottom: 5px;
+      max-width: 277px;
+    }
+    &__title {
+      text-align: center;
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 15px;
+      max-width: 277px;
+    }
+    &__lead {
+      margin-bottom: 35px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__btn {
+      width: 141px;
+      margin-bottom: 0;
+      font-size: 12px;
+      line-height: 14px;
+      padding: 12px;
 		}
-		&:active {
-			opacity: 0.5;
+		&__social {
+			display: none;
 		}
-	}
-	&__social {
-		flex-direction: column;
-		justify-content: flex-end;
-		padding-right: 113px;
-		margin-top: auto;
-		li {
-			margin-bottom: 14px;
-			&:last-of-type {
-				margin-bottom: 0;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .header__container {
+    background-position: right -150px bottom 0;
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .header {
+    &__container {
+      width: auto;
+      margin: 0;
+      padding: 0 27px;
+      background-image: url("../img/main-cat-tablet@1x.png");
+      background-size: 534px auto;
+      background-position: right 0 bottom 0;
+    }
+    &__wrapper {
+      padding-top: 28px;
+      padding-bottom: 45px;
+      width: 95.6%;
+    }
+    &__logo {
+      margin-bottom: 60px;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__lead {
+      margin-bottom: 49px;
+    }
+    &__btn {
+      margin-bottom: 60px;
+    }
+    &__social {
+      flex-direction: row;
+      order: 2;
+      padding-right: 0;
+      li {
+        margin-bottom: 0;
+        margin-right: 10px;
+        &:last-of-type {
+          margin-right: 0;
+        }
 			}
-		}
-		a {
-			width: 12px;
-			height: 11px;
-		}
-		svg {
-			fill: #ffffff;
-			&:hover,
-			&:focus {
-				fill: #a07b50;
+			a {
+				width: auto;
+				height: auto;
 			}
-		}
-		&::before {
-			content: "";
-			position: absolute;
-			bottom: 127px;
-			left: 6px;
-			height: 77px;
-			width: 2px;
-			background-color: rgba(255, 255, 255, 0.61);
-			margin-bottom: 29px;
-			align-self: center;
-		}
-	}
+			&::before {
+				display: none;
+			}
+    }
+  }
 }

@@ -43,7 +43,7 @@
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    color: #ffffff;
+    color: $main-color-text;
     padding-top: 47px;
     padding-bottom: 16px;
     transition: background-color 0.3s ease-out, fill 0.3s ease-out,
@@ -61,16 +61,95 @@
       stroke-width: 2;
       stroke: #1f1c1d;
       margin-bottom: 23px;
-			transition: fill 0.3s ease-out, stroke 0.3s ease-out;
-			&.icon-counseling24 {
-				margin-bottom: 33px;
-			}
-		}
-		span {
-			display: block;
-			margin: 0 auto;
-			margin-bottom: 10px;
-			max-width: 233px;
-		}
+      transition: fill 0.3s ease-out, stroke 0.3s ease-out;
+      &.icon-counseling24 {
+        margin-bottom: 33px;
+      }
+    }
+    span {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      max-width: 233px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    &__wrapper {
+      padding-top: 54px;
+      padding-bottom: 30px;
+    }
+    &__title {
+      max-width: 228px;
+      margin-bottom: 24px;
+    }
+    &__lead {
+      word-spacing: 1px;
+      margin-bottom: 36px;
+    }
+    &__item {
+      min-height: 248px;
+      width: 290px;
+      margin-bottom: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 140%;
+      padding-top: 39px;
+      max-width: 260px;
+      min-height: 218px;
+      svg {
+        width: 80px;
+        height: 90px;
+        margin-bottom: 10px;
+        &.icon-counseling24 {
+          margin-bottom: 2px;
+        }
+      }
+      span {
+        max-width: 213px;
+      }
+    }
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .advantages {
+    &__wrapper {
+      padding-top: 85px;
+      padding-bottom: 56px;
+    }
+    &__title {
+      margin-bottom: 21px;
+    }
+    &__lead {
+      margin-bottom: 59px;
+    }
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    &__item {
+      width: 360px;
+      margin-right: 0;
+      margin-bottom: 45px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+    &__link {
+      padding-top: 49px;
+      min-height: 272px;
+      svg {
+        margin-bottom: 27px;
+        &.icon-counseling24 {
+          margin-bottom: 35px;
+        }
+      }
+    }
   }
 }

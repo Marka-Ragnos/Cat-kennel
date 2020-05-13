@@ -126,9 +126,122 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: #a07b50;
-		}
-		&:hover::after {
-			background-color: $main-color-background;
-		}
+    }
+    &:hover::after {
+      background-color: $main-color-background;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .faq {
+    &__wrapper {
+      padding-top: 53px;
+      padding-bottom: 9px;
+    }
+    &__title {
+      margin-bottom: 24px;
+      transform: translateX(0);
+    }
+    &__lead {
+      max-width: 190px;
+      margin-bottom: 36px;
+    }
+    &__list {
+      transform: translateX(0);
+      width: 100%;
+    }
+    &__item {
+      margin-bottom: 30px;
+      padding-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+    &__question {
+      padding: 10px 17% 11px 14px;
+      font-size: 14px;
+      line-height: 140%;
+      &::after {
+        width: 14.3%;
+      }
+      &--zero-two {
+        padding: 12px 17% 10px 14px;
+        letter-spacing: 0.05px;
+      }
+      &--zero-three {
+        padding: 10px 17% 10px 14px;
+      }
+      &--zero-four {
+        padding: 10px 17% 10px 14px;
+      }
+      &:hover::after {
+        background-color: #1f1c1d;
+      }
+    }
+    &__answer {
+      padding-left: 14px;
+      padding-right: 25px;
+      &--show {
+        padding: 11px 25px 11px 14px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 142%;
+        &:first-of-type {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &__active-btn::after {
+      width: 14.3%;
+    }
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .faq {
+    &__wrapper {
+      padding-top: 137px;
+      padding-bottom: 31px;
+    }
+    &__title {
+      margin-bottom: 19px;
+      transform: translateX(-5px);
+    }
+    &__lead {
+      margin-bottom: 52px;
+      word-spacing: 1px;
+    }
+    &__list {
+      transform: translateX(12px);
+      width: 89.1%;
+    }
+    &__item {
+      padding-left: 82px;
+      margin-bottom: 23px;
+      &::before {
+        top: 9px;
+        left: 1px;
+        font-size: 50px;
+        line-height: 59px;
+      }
+    }
+    &__question {
+      padding: 21px 140px 16px 29px;
+      &--zero-two {
+        padding: 28px 140px 28px 26px;
+      }
+      &--zero-four {
+        padding: 31px 140px 25px 28px;
+      }
+    }
+    &__answer {
+      padding-left: 28px;
+      padding-right: 143px;
+      &--show {
+        padding: 24px 143px 29px 28px;
+      }
+    }
   }
 }

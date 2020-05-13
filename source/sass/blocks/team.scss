@@ -52,13 +52,13 @@
     margin-left: auto;
     margin-right: auto;
   }
-  // &__list {
-  //   margin: 0;
-  //   padding: 0;
-  //   list-style: none;
-  //   position: relative;
-  //   width: 100%;
-  // }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
   &__item {
     width: 100%;
     height: 100%;
@@ -109,7 +109,7 @@
       font-weight: 300;
       font-size: 16px;
       line-height: 25px;
-      color: #ffffff;
+      color: $main-color-text;
       opacity: 0.7;
     }
   }
@@ -119,17 +119,197 @@
       &:last-of-type {
         margin-right: 0;
       }
-		}
-		svg {
-			fill: #ffffff;
-			&:hover,
-			&:focus {
-				fill: #a07b50;
-			}
-		}
-	}
-	// &__item-show {
-	// 	opacity: 1;
-	// 	z-index: 2;
-	// }
+    }
+    svg {
+      fill: #ffffff;
+      &:hover,
+      &:focus {
+        fill: #a07b50;
+      }
+    }
+  }
+  // &__item-show {
+  // 	opacity: 1;
+  // 	z-index: 2;
+  // }
+}
+
+@media (max-width: $tablet-width) {
+  .team {
+    &__wrapper-outer {
+      flex-direction: column;
+      padding-top: 0;
+      padding-right: 0;
+      padding-left: 0;
+      img {
+        width: 166px;
+        height: 166px;
+      }
+    }
+    &__wrapper {
+      padding-top: 55px;
+      padding-bottom: 58px;
+    }
+    &__slider {
+      width: 100%;
+      transform: translateX(0);
+      padding-bottom: 0;
+      button {
+        width: 19px;
+        height: 19px;
+        &:first-of-type,
+        &:last-of-type {
+          top: 22.5%;
+          bottom: auto;
+        }
+        &:first-of-type {
+          left: 54px;
+        }
+        &:last-of-type {
+          right: 54px;
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 24px;
+    }
+    &__lead {
+      margin-bottom: 35px;
+      max-width: 90%;
+    }
+    &__list {
+      width: 100%;
+      transform: translateX(0);
+    }
+    &__item img {
+      display: block;
+      position: relative;
+      bottom: auto;
+      right: auto;
+      width: 100%;
+      height: auto;
+      line-height: 0;
+    }
+    &__img-wrapper {
+      position: relative;
+      top: 0;
+      bottom: auto;
+      right: auto;
+      width: 43%;
+      max-width: 180px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__item-title {
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    &__item-job-title {
+      font-size: 14px;
+      line-height: 135.94%;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    &__item-wrapper {
+      width: auto;
+      margin-top: -60px;
+      padding: 84px 10px 16px 13px;
+      border: none;
+      outline: none;
+      blockquote p {
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        margin-bottom: 22px;
+      }
+    }
+    &__social {
+      justify-content: center;
+      li {
+        margin-right: 11px;
+      }
+    }
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .team {
+    &__wrapper-outer {
+      position: relative;
+      padding-right: 27px;
+      padding-left: 0;
+      width: auto;
+      img {
+        width: 207px;
+        height: 208px;
+      }
+    }
+    &__wrapper {
+      padding-top: 84px;
+      padding-bottom: 88px;
+    }
+    &__slider {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      padding-bottom: 105px;
+      button {
+        position: absolute;
+        z-index: 2;
+        &:first-of-type,
+        &:last-of-type {
+          top: auto;
+          bottom: 9px;
+        }
+        &:first-of-type {
+          left: auto;
+          right: 330px;
+        }
+        &:last-of-type {
+          left: auto;
+          right: 54px;
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 22px;
+    }
+    &__lead {
+      margin-bottom: 24px;
+    }
+    &__list {
+      width: 100%;
+    }
+    &__item {
+      padding-left: 0;
+      img {
+        position: absolute;
+        bottom: -95px;
+        right: 102px;
+      }
+    }
+    &__img-wrapper {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    &__item-job-title {
+      margin: 0 0 24px;
+    }
+    &__item-wrapper {
+      width: 58%;
+      padding: 70px 95px 75px 105px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 22px solid #151313;
+      border-right-width: 22px;
+      border-left-width: 22px;
+      blockquote p {
+        margin: 0 0 48px;
+      }
+    }
+  }
 }

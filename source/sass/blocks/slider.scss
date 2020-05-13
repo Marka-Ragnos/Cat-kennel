@@ -56,3 +56,29 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .slider {
+    &__button--prev {
+      left: 0;
+    }
+    &__button--next {
+      right: 0;
+    }
+    &__slide {
+      margin: 0;
+      height: 78.125vw;
+      max-height: 450px;
+      transition: none;
+      background-color: transparent;
+    }
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .slider {
+    &__slide--active {
+      height: 495px;
+    }
+  }
+}

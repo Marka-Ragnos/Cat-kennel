@@ -35,7 +35,7 @@
       margin: 0;
     }
     time {
-			font-family: $main-fonts;
+      font-family: $main-fonts;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -54,7 +54,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    color: #ffffff;
+    color: $main-color-text;
   }
   &__img-wrapper {
     width: 60%;
@@ -81,7 +81,7 @@
       font-weight: 300;
       font-size: 14px;
       line-height: 23px;
-      color: #ffffff;
+      color: $main-color-text;
       opacity: 0.7;
     }
   }
@@ -116,5 +116,195 @@
   }
   &__icon {
     fill: #a07b50;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .reviews {
+    &__wrapper {
+      padding-top: 15px;
+      padding-bottom: 60px;
+    }
+    &__slider {
+      padding-top: 0;
+      padding-left: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      button {
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        &:first-of-type {
+          background-image: url("../img/arrowPrev.svg");
+          left: 0;
+          top: 97px;
+        }
+        &:last-of-type {
+          background-image: url("../img/arrowNext.svg");
+          right: 0;
+          top: 97px;
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 51px;
+      transform: translateX(0);
+    }
+    &__list {
+      width: 100%;
+    }
+    &__item {
+      img {
+        position: relative;
+        width: auto;
+        height: auto;
+        top: 0;
+      }
+      time {
+        margin-right: 37px;
+      }
+    }
+    &__item-title {
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    &__img-wrapper {
+      width: 242px;
+      height: 166px;
+      margin-top: 0;
+      position: relative;
+      z-index: 5;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__content {
+      width: auto;
+      margin: 0;
+      margin-top: -83px;
+      padding: 116px 27px 39px;
+      blockquote p {
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        margin-bottom: 21px;
+      }
+    }
+    &__social {
+      justify-content: center;
+      li {
+        margin-right: 15px;
+        margin-bottom: 0;
+      }
+    }
+    &__icon {
+      &--tw {
+        width: 16px;
+        height: 12px;
+      }
+      &--vk {
+        width: 18px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .reviews {
+    &__wrapper {
+      padding-top: 34px;
+      padding-bottom: 86px;
+    }
+    &__slider {
+      width: 100%;
+      position: relative;
+      padding: 0;
+      padding-top: 95px;
+      padding-left: 13px;
+      button {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        width: 60px;
+        height: 18px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.5;
+        transition: opacity 0.3s ease-out;
+        &:hover {
+          opacity: 1;
+        }
+        &:first-of-type {
+          top: 155px;
+          z-index: 5;
+          left: 17.5%;
+          background-image: url("../img/arrowPrevLong.svg");
+          background-position: center;
+        }
+        &:last-of-type {
+          top: 155px;
+          right: 14.5%;
+          background-image: url("../img/arrowNextLong.svg");
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 49px;
+      transform: translateX(8px);
+    }
+    &__list {
+      width: 100%;
+      height: auto;
+    }
+    &__item {
+      flex-direction: column;
+      position: relative;
+      padding-left: 0;
+      width: 100%;
+      img {
+        position: relative;
+        width: 302px;
+        height: 208px;
+        top: 10px;
+        left: 0;
+      }
+    }
+    &__item-title {
+      text-align: center;
+    }
+    &__img-wrapper {
+      width: 302px;
+      height: 208px;
+      margin-top: 0;
+      margin-left: 0;
+      position: absolute;
+      z-index: 5;
+      top: -105px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__content {
+      width: 54%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 148px 89px 15px 111px;
+      align-items: center;
+      blockquote p {
+        margin: 0 0 26px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  .reviews__content {
+    padding: 109px 30px 82px 120px;
   }
 }

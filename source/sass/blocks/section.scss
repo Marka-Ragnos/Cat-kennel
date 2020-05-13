@@ -1,28 +1,41 @@
 .section {
   &__title {
-		margin: 0;
-		font-family: "Yeseva One", "Georgia", serif;
+    margin: 0;
+    font-family: "Yeseva One", "Georgia", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 42px;
-    color: #ffffff;
+    color: $main-color-text;
     text-align: center;
-	}
-	&__lead {
-		margin: 0;
-		font-family: $main-fonts;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 26px;
-		text-align: center;
-		color: #a07b50;
-	}
-	&__wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-	}
+  }
+  &__lead {
+    margin: 0;
+    font-family: $main-fonts;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #a07b50;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .section {
+    &__title {
+      font-size: 28px;
+      line-height: 32px;
+		}
+		&__lead {
+			font-size: 14px;
+			line-height: 140%;
+		}
+  }
 }

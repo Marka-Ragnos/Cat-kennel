@@ -41,7 +41,7 @@
     font-size: 18px;
     line-height: 21px;
     text-decoration: none;
-    color: #ffffff;
+    color: $main-color-text;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -80,7 +80,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-    color: #ffffff;
+    color: $main-color-text;
     display: block;
     overflow: hidden;
     cursor: pointer;
@@ -101,5 +101,91 @@
   }
   &__tab-content--show {
     display: block;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .pets {
+    &__wrapper {
+      padding-top: 53px;
+    }
+    &__title {
+      margin-bottom: 22px;
+    }
+    &__lead {
+      margin-bottom: 30px;
+      line-height: 144%;
+      word-spacing: 1px;
+    }
+    &__list {
+      max-width: 300px;
+      width: 80%;
+      margin-bottom: 38px;
+      padding-right: 0;
+    }
+    &__tab {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__tab-content {
+      width: 100%;
+      max-width: 500px;
+      button {
+        top: calc(50% - 52px);
+        width: 9px;
+        height: 18px;
+      }
+    }
+    &__slider {
+      position: relative;
+      width: calc(100% - 50px);
+    }
+    &__btn {
+      width: 141px;
+      margin-bottom: 0;
+      font-size: 12px;
+      line-height: 14px;
+      padding: 12px;
+    }
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .pets {
+    &__wrapper {
+      display: block;
+      padding-top: 101px;
+    }
+    &__title {
+      margin-bottom: 22px;
+    }
+    &__lead {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 43px;
+    }
+    &__list {
+      width: 36.5%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 38px;
+      padding-right: 10px;
+    }
+    &__tab-content {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      button {
+        top: 238px;
+        display: block;
+      }
+    }
+    &__slider {
+      position: relative;
+      width: calc(100% - 90px);
+    }
+    &__btn {
+      transform: translateX(-2px);
+    }
   }
 }

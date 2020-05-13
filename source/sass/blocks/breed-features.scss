@@ -62,7 +62,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 23px;
-    color: #ffffff;
+    color: $main-color-text;
     position: relative;
     &::before {
       content: "";
@@ -109,6 +109,167 @@
       text-align: right;
       &::before {
         right: -31px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .breed-features {
+    &__wrapper {
+      display: block;
+      padding-top: 33px;
+      padding-bottom: 60px;
+    }
+    &__title {
+      margin-bottom: 25px;
+      text-align: center;
+      width: 100%;
+    }
+    &__image {
+      width: 267px;
+      margin: 0 auto;
+      margin-bottom: 45px;
+      transform: translateX(0);
+      &::before {
+        top: 50px;
+        left: 15px;
+        width: 230px;
+        height: 230px;
+      }
+      &::after {
+        top: 25px;
+        left: -7px;
+        width: 280px;
+        height: 280px;
+      }
+    }
+    &__lead {
+      margin: 0 auto 26px;
+      width: 96%;
+    }
+    &__list {
+      position: static;
+      transform: none;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 auto;
+      width: 255px;
+    }
+    &__item {
+      font-size: 14px;
+      line-height: 140%;
+      padding-left: 0;
+      top: 5px;
+      left: 0;
+      text-align: left;
+      max-width: none;
+      &::before {
+        width: 8px;
+        height: 8px;
+        top: 4px;
+        left: -18px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $intermediate-width) {
+  .breed-features {
+    &__item {
+      &--cohabitation {
+        left: -368px;
+        max-width: 167px;
+      }
+      &--instruction {
+        right: -442px;
+        max-width: 132px;
+      }
+      &--weight {
+        right: -342px;
+        max-width: 110px;
+      }
+      &--appearance {
+        left: -295px;
+        max-width: 140px;
+      }
+    }
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .breed-features {
+    &__wrapper {
+      padding-top: 31px;
+      padding-bottom: 108px;
+    }
+    &__title {
+      transform: translateX(0);
+    }
+    &__image {
+      width: 435px;
+      img {
+        width: 401px;
+      }
+      &::before {
+        top: 70px;
+        left: 19px;
+        width: 342px;
+        height: 348px;
+      }
+      &::after {
+        top: 34px;
+        left: -20px;
+        width: 417px;
+        height: 425px;
+      }
+    }
+    &__lead {
+      margin-bottom: 48px;
+      min-height: 78px;
+    }
+    &__item {
+      &::before {
+        top: 5px;
+        width: 10px;
+        height: 10px;
+      }
+      &--cohabitation {
+        top: 343px;
+        left: -277px;
+        max-width: 167px;
+        &::before {
+          right: -25px;
+        }
+      }
+      &--instruction {
+        top: 353px;
+        right: -308px;
+        max-width: 132px;
+        &::before {
+          top: 3px;
+          left: -23px;
+        }
+      }
+      &--weight {
+        top: 409px;
+        right: -284px;
+        max-width: 110px;
+        &::before {
+          top: 4px;
+          left: -22px;
+        }
+      }
+      &--appearance {
+        max-width: 140px;
+        top: 311px;
+        left: -261px;
+        &::before {
+          right: -20px;
+        }
       }
     }
   }

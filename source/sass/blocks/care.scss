@@ -93,6 +93,84 @@
 		font-weight: 300;
 		font-size: 14px;
 		line-height: 23px;
-		color: #ffffff;
+		color: $main-color-text;
 	}
+}
+
+@media (max-width: $tablet-width) {
+  .care {
+    background-image: url("../img/bg-care-tablet@1x.jpg");
+    background-size: cover;
+    &__wrapper {
+      padding-top: 54px;
+      padding-bottom: 45px;
+    }
+    &__title {
+      margin-bottom: 33px;
+      max-width: 75%;
+    }
+    &__list {
+      width: 100%;
+      transform: translateX(0);
+    }
+    &__item {
+      margin-bottom: 30px;
+    }
+    &__link {
+      padding: 21px 18% 18px 24px;
+      min-height: 152px;
+      &::after {
+        width: 15.6%;
+      }
+    }
+    &__link-title {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__link-content {
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: $laptop-width) {
+  .care {
+    background-image: url("../img/bg-care-tablet@1x.jpg");
+    background-size: cover;
+    &__wrapper {
+      padding-top: 90px;
+      padding-bottom: 79px;
+    }
+    &__title {
+      margin-bottom: 38px;
+    }
+    &__list {
+      display: block;
+      width: 78.2%;
+      transform: translateX(9px);
+      column-count: 1;
+      column-gap: 0;
+      column-width: auto;
+    }
+    &__item {
+      margin-right: 0;
+      margin-bottom: 23px;
+      &--wool {
+        order: 0;
+      }
+      &--earsandeyes {
+        order: 1;
+      }
+      &--claws {
+        order: 2;
+      }
+      &--food {
+        order: 3;
+      }
+    }
+    &__link {
+      padding: 39px 120px 21px 48px;
+      min-height: 168px;
+    }
+  }
 }
